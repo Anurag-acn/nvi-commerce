@@ -1,0 +1,104 @@
+
+
+.tabs .tabs-list {
+  display: flex;
+  gap: 4px;
+  max-width: 100%;
+  font-size: var(--body-font-size-xs);
+}
+
+
+.tabs .tabs-list button {
+  flex: 0 0 max-content;
+  margin: 0;
+  border-bottom: 2px solid var(--color-dark-warm);
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: solid 2px transparent;
+  border-radius: 0;
+  padding: 8px 12px;
+  color: initial;
+  transition: background-color 0.2s;
+  background: none;
+  min-width: 100px;
+}
+
+.tabs .tabs-list button:focus {
+  outline: 1px solid var(--link-color);
+      outline-offset: 4px;
+      z-index: 1;
+}
+.tabs .tabs-list button:hover {
+  border-bottom: 2px solid var(--link-hover-color);
+}
+
+.tabs .tabs-list button p {
+  margin: 0;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  text-align: center;
+
+}
+
+
+.tabs .tabs-list button[aria-selected='true'] {
+  border-bottom: 2px solid var(--link-color);
+  cursor: initial;
+}
+
+.tabs .tabs-panel {
+  padding: 24px;
+  overflow: auto;
+}
+
+.tabs .tabs-panel[aria-hidden='true'] {
+  display: none;
+}
+
+
+.tabs.tabs-contained .tabs-list button {
+background-color: #E4E4E4;
+border-bottom:0px;
+border-top: solid 2px transparent;
+padding: 8px 16px;
+}
+
+.tabs.tabs-contained .tabs-list{
+  gap: 1px;
+}
+
+.tabs.tabs-contained .tabs-list button:hover {
+  border-top: 2px solid var(--link-hover-color);
+  background: none;
+}
+
+.tabs.tabs-contained .tabs-list button[aria-selected='true'] {
+  border-top: 2px solid var(--link-color);
+  border-bottom: 0px;
+  background: none;
+  cursor: initial;
+}
+
+@media (width <= 767px) {
+  .tabs .tabs-list {
+    font-size: var(--body-font-size-m);
+  }
+}
+
+/*America’s Best*/
+.tabs .tabs-list button p {
+  font-weight: 800;
+}
+
+
+/*Eyeglass World*/
+.brand-eye .tabs .tabs-list button p {
+    font-weight: 400;
+  }
+
+/*Vista Optical*/
+.brand-vi .tabs .tabs-list button p {
+    font-weight: 400;
+  }
