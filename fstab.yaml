@@ -1,6 +1,6 @@
 mountpoints:
   /:
-    url: "https://author-p154460-e1621077.adobeaemcloud.com/bin/franklin.delivery/Anurag-acn/nvi-commerce/main"
+    url: "https://author-p154460-e1621077.adobeaemcloud.com/bin/franklin.delivery/Anurag-acn/nvi-commerce1/main"
     type: "markup"
     suffix: ".html"
 folders:
