@@ -18,6 +18,9 @@
     "...": "./_commerce-cart.json#/models"
   },
   {
+    "...": "./_commerce-mini-cart#/models"
+  },
+  {
     "...": "../blocks/*/_*.json#/models"
   },
   {
