@@ -77,6 +77,17 @@
       "id": "sections",
       "components": [
         {
+          "title": "Text",
+          "id": "text",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/text/v1/text",
+                "template": {}
+              }
+            }
+          }
+        },{
           "title": "Section",
           "id": "section",
           "plugins": {
