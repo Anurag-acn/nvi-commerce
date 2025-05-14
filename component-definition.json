@@ -71,6 +71,38 @@
           }
         }
       ]
-    }
+    },
+    {
+      "title": "Test Blocks",
+      "id": "test-blocks",
+      "components": [
+        {
+          "title": "Text",
+          "id": "text",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "blocks/columns",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
+          "title": "Title",
+          "id": "title",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "blocks/cards",
+                "template": {
+                  "model": "title"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
   ]
 }
