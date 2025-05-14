@@ -77,7 +77,7 @@
       "id": "blocks",
       "components": [
         {
-          "title": "Cards",
+          "title": "Test Cards",
           "id": "cards",
           "plugins": {
             "xwalk": {
