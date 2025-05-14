@@ -58,8 +58,8 @@
         }
       ]
     },
-    {
-      "title": "NEW Content",
+{
+      "title": "Static Content",
       "id": "default",
       "components": [
         {
