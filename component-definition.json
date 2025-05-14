@@ -77,18 +77,6 @@
       "id": "sections",
       "components": [
         {
-          "title": "Text",
-          "id": "text",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/text/v1/text",
-                "template": {}
-              }
-            }
-          }
-        },
-        {
           "title": "Section",
           "id": "section",
           "plugins": {
@@ -315,6 +303,17 @@
       "id": "cart",
       "components": [
         {
+          "title": "Text",
+          "id": "text",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/text/v1/text",
+                "template": {}
+              }
+            }
+          }
+        }, {
           "title": "Mini Cart",
           "id": "commerce-mini-cart",
           "plugins": {
