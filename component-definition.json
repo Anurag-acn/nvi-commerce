@@ -55,6 +55,20 @@
               }
             }
           }
+        },
+        {
+          "title": "Button - NVI",
+          "id": "button",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "blocks/button-nvi",
+                "template": {
+                  "model": "button"
+                }
+              }
+            }
+          }
         }
       ]
     },
