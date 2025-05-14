@@ -73,42 +73,6 @@
       ]
     },
     {
-      "title": "Sections",
-      "id": "sections",
-      "components": [
-        {
-          "title": "Section",
-          "id": "section",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/section/v1/section",
-                "template": {
-                  "model": "section",
-                  "filter": "section"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Columns Section",
-          "id": "columns-section",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/section/v1/section",
-                "template": {
-                  "model": "columns-section",
-                  "filter": "account-section"
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
       "title": "Blocks",
       "id": "blocks",
       "components": [
