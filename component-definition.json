@@ -117,7 +117,7 @@
       ]
     },
     {
-      "title": "Sections", /*New Section*/
+      "title": "Sections",
       "id": "sections",
       "components": [
         {
