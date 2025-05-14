@@ -1,0 +1,895 @@
+
+:root {
+ --gilroy: "Gilroy", sans-serif;
+ --avenir: "Avenir", sans-serif;
+}
+
+a.button:any-link,
+button {
+    box-sizing: border-box;
+    display: inline-block;
+    max-width: 100%;
+    margin: 12px 0;
+    border: 2px solid transparent;
+    border-radius: 2.4em;
+    padding: 0.5em 1.2em;
+    font-family: var(--body-font-family);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--link-color);
+    color: var(--background-color);
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+
+/* Primary and Default Button */
+
+.primary a.button,
+button,
+a.button.primary,
+button.primary {
+    background-color: #295edb;
+    border-radius: 48px;
+    color: var(--color-white);
+}
+
+a.button:disabled,
+button:disabled,
+a.button.primary:disabled,
+button.primary:disabled {
+  background-color: #295edb;
+  color: var(--color-white);
+  opacity: 0.3;
+}
+
+a.button:focus,
+button:focus,
+button.primary:focus {
+  background-color: #295edb;
+  color: var(--color-white);
+  outline: 2px solid #295edb;
+  outline-offset: 2px;
+}
+
+.primary-variant .button-container a.button {
+    background-color: #295edb;
+    color: var(--color-white);
+    border-radius: 8px;
+    padding: 16px 24px;
+    }
+ 
+.primary a.button:hover,
+button:hover,
+a.button.primary:hover,
+button.primary:hover {
+  background-color: #1e4b8f;
+  color: var(--color-white);
+}
+
+.secondary .button-container a.button,
+button.secondary {
+    background-color: unset;
+    border: 2px solid var(--link-color);
+    color: var(--link-color);
+}
+
+.secondary a.button:focus {
+    background-color: unset;
+    border: 2px solid var(--link-color);
+    color: var(--link-color);
+    outline: 2px solid var(--link-color);
+    outline-offset: 2px;
+}
+
+.secondary-variant .button-container a.button {
+    background-color: unset;
+    border: 2px solid var(--link-color);
+    border-radius: 8px;
+    color: var(--link-color);
+    padding: 16px 24px;
+}
+
+ .text-btn .button-container a.button {
+    background-color: unset;
+    font-family: var(--body-font-family);
+    font-size: 16px;
+    font-style: normal;
+    color: #295EDB;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    margin: 12px 0;
+    padding: 0.5em 0;
+ }
+
+.primary.eyeglass .button-container a.button,
+.primary-variant.eyeglass .button-container a.button{
+    background-color: #E12726;
+    color: var(--color-white);
+
+}
+
+.primary.vistaopt .button-container a.button,
+.primary-variant.vistaopt .button-container a.button {
+    background-color: #21356E;
+    color: var(--color-white);
+
+}
+
+.primary.discountcontacts .button-container a.button
+{
+    background-color: #1A68A8;
+
+}
+
+.primary-variant .button-container a.button:disabled {
+background-color: #1e4b8f;
+opacity: 0.3;
+}
+
+.primary-variant .button-container a.button:hover {
+background-color: #1e4b8f;
+}
+
+
+.primary-variant .button-container a.button:focus {
+background-color: #295edb;
+outline: 2px solid #295edb;
+outline-offset: 2px;
+}
+
+.secondary.eyeglass .button-container a.button,
+.secondary-variant.eyeglass .button-container a.button {
+  color: var(--ew-main-blue);
+  border: 2px solid var(--ew-main-blue);
+}
+
+.secondary .button-container .button:hover,
+button.secondary:hover {
+    background-color: unset;
+    border: 2px solid var(--link-hover-color);
+    color: var(--link-hover-color);
+}
+
+.secondary.vistaopt .button-container a.button,
+.secondary-variant.vistaopt .button-container a.button {
+  color: var(--vista-blue);
+  border: 2px solid var(--vista-blue);
+}
+
+
+
+ .text-btn .button-container a.button:hover {
+    background-color: unset;
+    font-family: var(--avenir);
+    font-size: 16px;
+    font-style: normal;
+    color: #1E4B8F;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    border-bottom:  2px solid #1E4B8F;
+    border-radius: 0;
+    margin: 12px 0;
+    padding: 0.5em 0;
+    }
+
+    .text-btn .button-container a.button:disabled {
+    background-color: unset;
+    font-family: var(--avenir);
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    color: #295EDB;
+    font-weight: 800;
+    letter-spacing: 0.32px;
+    opacity: 0.3;
+}
+
+.text-btn .button-container a.button:focus {
+    background-color: unset;
+    font-family: var(--gilroy);
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    color: #295EDB;
+    font-weight: 800;
+    letter-spacing: 0.32px;
+    border-radius: 8px; 
+    outline-offset: 1px;
+}
+
+   .text-btn.vistaopt .button-container a.button {
+    background-color: unset;
+    font-family: var(--avenir);
+    font-size: 16px;
+    font-style: normal;
+    color: #21356E;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    }
+
+      .text-btn.eyeglass .button-container a.button {
+    background-color: unset;
+    font-family: var(--avenir);
+    font-size: 16px;
+    font-style: normal;
+    color: #007CBA;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    margin: 12px 0;
+    padding: 0.5em 0;
+    }
+
+    .link-btn.eyeglass .button-container a.button {
+background-color: unset;
+font-family: var(--avenir);
+font-size: 16px;
+font-style: normal;
+line-height: normal;
+color: #295EDB;
+font-weight: 400;
+letter-spacing: 0.32px;
+text-align: center;
+margin: 12px 0;
+padding: 0.5em 0;
+
+}
+
+.link-btn.americas .button-container a.button {
+background-color: unset;
+font-family: var(--avenir);
+font-size: 16px;
+font-style: normal;
+color: #295EDB;
+font-weight: 800;
+line-height: normal;
+letter-spacing: 0.32px;
+text-align: center;
+border-radius: 8px;
+margin: 12px 0;
+padding: 0.5em 0;
+
+}
+
+    .link-btn.vistaopt .button-container a.button {
+    background-color: unset;
+    font-family: var(--avenir);
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    color: #295EDB;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 12px 0;
+    padding: 0.5em 0;
+
+    }
+
+    
+.secondary-variant .button-container a.button:hover {
+    background-color: unset;
+    border: 2px solid var(--link-hover-color);
+    color: var(--link-hover-color);
+}
+
+.primary.eyeglass .button-container a.button:hover,
+button.primary:hover, 
+.primary-variant.eyeglass .button-container a.button:hover{
+    background-color: #AD1C22;
+  
+}
+
+.primary.eyeglass .button-container a.button:focus,
+button.primary:focus, 
+.primary-variant.eyeglass .button-container a.button:focus{
+    background-color: #E12726;
+    outline: 2px solid #E12726;
+    outline-offset: 2px; 
+}
+
+
+
+
+.primary.vistaopt .button-container a.button:hover,
+.primary-variant.vistaopt .button-container a.button:hover{
+    background-color: #17254D;
+  
+}
+
+.primary.vistaopt .button-container a.button:focus, .primary-variant.vistaopt .button-container a.button:focus 
+{
+    background-color: #21356E;
+    outline: 2px solid #21356E;
+    outline-offset: 2px; 
+}
+
+.primary.discountcontacts .button-container a.button:focus
+{
+    background-color: #1A68A8;
+    outline: 2px solid #1A68A8;
+    outline-offset: 2px; 
+}
+
+.primary.discountcontacts .button-container a.button:hover
+{
+    background-color: #155387;
+}
+
+
+
+button.primary:focus{
+    background-color: #21356E;
+    outline: 2px solid #21356E;
+    outline-offset: 2px; 
+}
+
+.primary-variant.vistaopt .button-container a.button:focus{
+    background-color: #21356E;
+    outline: 2px solid #21356E;
+    outline-offset: 2px; 
+}
+
+
+@media (width >= 768px) {
+  .primary a.button,
+  button,
+  a.button.primary,
+  button.primary {
+    color: var(--color-white);
+    background-color: #155387;
+    border-radius: 48px;
+    padding: 0.75em 1.5em;
+}
+
+.primary a.button:hover,
+button:hover,
+a.button.primary:hover,
+button.primary:hover {
+    background-color: #1e4b8f;
+}
+
+button:focus,
+a.button.primary:focus,
+button.primary:focus {
+    background-color: #1a68a8;
+}
+
+
+}
+
+/* Primary Variant Button */
+
+
+
+
+
+@media (width <= 768px) {
+.primary-variant .button-container a.button {
+    background-color: #295edb;
+    padding: 0.75em 1.5em;
+}
+
+}
+
+/* .primary-variant .button-container a.button:disabled {
+background-color: #295edb;
+color: var(--color-white);
+opacity: 0.3;
+} */
+.primary-variant .button-container .button:hover {
+background-color: #1e4b8f;
+color: var(--color-white);
+}
+
+.primary-variant .button-container .button:focus {
+background-color: #295edb;
+color: var(--color-white);
+outline: 2px solid #295edb;
+outline-offset: 2px;
+}
+
+/* Secondary Button */
+
+
+a.button.secondary:disabled,
+button.secondary:disabled {
+    background-color: unset;
+    border: 2px solid var(--link-color);
+    color: var(--link-color);
+    opacity: 0.3;
+}
+
+
+.secondary.eyeglass .button-container .button:hover,
+button.secondary:hover,
+.secondary-variant.eyeglass .button-container a.button:hover {
+  background-color: unset;
+  border: 2px solid var(--link-hover-color);
+  color: var(--link-hover-color);
+}
+
+.secondary.eyeglass .button-container .button:focus,
+button.secondary:focus,
+.secondary-variant.eyeglass .button-container a.button:focus {
+  border: 2px solid var(--ew-main-blue);
+  outline: 2px solid var(--ew-main-blue);
+}
+
+
+.secondary.vistaopt .button-container .button:hover,
+button.secondary:hover,
+.secondary-variant.vistaopt .button-container a.button:hover {
+  border: 2px solid #17254d;
+  color: #17254d;
+}
+
+.secondary.vistaopt .button-container .button:focus,
+button.secondary:focus,
+.secondary-variant.vistaopt .button-container a.button:focus {
+  border: 2px solid var(--vista-blue);
+  outline: 2px solid var(--vista-blue);
+}
+
+@media (width<= 768px) {
+    a.button.secondary,
+    button.secondary {
+        padding: 0.75em 1.5em;
+    }
+}
+
+/* Text Button */
+
+a.button.text-btn,
+button.text-btn {
+    background-color: unset;
+    color: var(--link-color);
+    padding: 0;
+}
+
+a.button.text-btn:hover,
+button.text-btn:hover {
+    background-color: unset;
+    color: var(--link-hover-color);
+    border-bottom: 1px solid var(--link-hover-color);
+}
+
+a.button.text-btn:disabled,
+button.text-btn:disabled {
+    background-color: unset;
+    color: var(--link-color);
+    opacity: 0.3;
+}
+
+a.button.text-btn:focus,
+button.text-btn:focus {
+    background-color: unset;
+    border-radius: 4px;
+    border: 1px solid var(--link-color);
+    color: var(--link-color);
+}
+
+
+a.button.link-btn,
+button.link-btn {
+    background-color: unset;
+    color: var(--link-color);
+    padding: 0;
+}
+
+a.button.link-btn:hover,
+button.link-btn:hover {
+    background-color: unset;
+    color: var(--link-hover-color);
+    border-bottom: 1px solid var(--link-hover-color);
+}
+
+a.button.link-btn:disabled,
+button.link-btn:disabled {
+    background-color: unset;
+    color: var(--link-color);
+    opacity: 0.3;
+}
+
+a.button.link-btn:focus,
+button.link-btn:focus {
+  background-color: unset;
+  border-radius: 8px;
+  border: 2px solid var(--link-color);
+  color: var(--link-color);
+}
+
+
+
+/* text button */
+
+/* america */
+
+
+ .text-btn .button-container a.button::after {
+    top:1px;
+    margin-left: 8px;
+    position:relative;
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #295EDB; 
+    mask-image: url('../icons/arrow.svg');
+    aspect-ratio: 1/1;
+ 
+}
+
+
+
+.text-btn .button-container a.button:hover::after {
+        background-color: #1E4B8F;           
+    }
+
+
+
+.text-btn .button-container a.button:disabled::after {
+    background-color: #295EDB;         
+}
+
+
+
+.text-btn .button-container a.button:focus::after {
+    background-color: #295EDB;          
+}
+
+/* vista */
+
+
+    .text-btn.vistaopt .button-container a.button::after {
+        background-image: url('../icons/arrow.svg'); 
+        margin-left: 8px; 
+    }
+    
+    .text-btn.vistaopt .button-container a.button:hover {
+    background-color: unset;
+    font-family: var(--avenir);
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    color: #17254D;
+    font-weight: 800;
+    letter-spacing: 0.32px;
+    border-bottom:  2px solid #17254D;
+    border-radius: 0;
+    margin: 12px 0;
+    padding: 0.5em 0;
+        }
+
+    
+
+    .text-btn.eyeglass .button-container a.button::after {
+        top:1px;
+        margin-left: 8px;
+        position:relative;
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #007CBA;
+        mask-image: url('../icons/arrow.svg');
+        aspect-ratio: 1/1;
+          
+    }
+
+    .text-btn.vistaopt .button-container a.button:hover::after {
+        background-color: #17254D;            
+    }
+    
+    .text-btn.vistaopt .button-container a.button:disabled {
+    background-color: unset;
+    font-family: var(--body-font-family, --Avenir);
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    color: #21356E;
+    font-weight: 800;
+    letter-spacing: 0.32px;
+    opacity: 0.3;
+    }
+
+    .text-btn.vistaopt .button-container a.button:disabled::after {
+        background-color: #21356E;            
+    }
+
+    .text-btn.vistaopt .button-container a.button:focus {
+    background-color: unset;
+    font-family: var(--avenir);
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    color: #21356E;
+    font-weight: 800;
+    letter-spacing: 0.32px;
+    outline: 2px solid #21356E;
+    outline-offset: 1px;
+    }
+
+    .text-btn.vistaopt .button-container a.button:focus::after {
+        background-color: #21356E;            
+    }
+
+/* eyeglass */
+
+ 
+    .text-btn.eyeglass .button-container a.button:hover {
+    background-color: unset;
+    font-family: var(--avenir);
+    font-size: 16px;
+    font-style: normal;
+    color: #006395;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    border-bottom:  2px solid #006395;
+    border-radius: 0;
+    margin: 12px 0;
+    padding: 0.5em 0;
+        }
+
+
+   .text-btn.eyeglass .button-container a.button:hover::after {
+            background-color: #006395;
+            width: 12px;
+            height: 12px;  
+            aspect-ratio: 1/1;         
+        }
+    
+    .text-btn.eyeglass .button-container a.button:disabled {
+    background-color: unset;
+    font-family: var(--avenir);
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    color: #007CBA;
+    font-weight: 800;
+    letter-spacing: 0.32px;
+    opacity: 0.3;
+    }
+
+    .text-btn.eyeglass .button-container a.button:disabled::after {
+        background-color: #007CBA;
+        width: 12px;
+        height: 12px;  
+        aspect-ratio: 1/1;         
+    }
+
+    .text-btn.eyeglass .button-container a.button:focus {
+    background-color: unset;
+    font-family: var(--avenir);
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    color: #007CBA;
+    font-weight: 800;
+    letter-spacing: 0.32px;
+    outline: 2px solid #007CBA;
+    outline-offset: 1px;
+    }
+
+    .text-btn.eyeglass .button-container a.button:focus::after {
+        background-color: #007CBA;
+        width: 12px;
+        height: 12px;  
+        aspect-ratio: 1/1;         
+    }
+
+/* Link btn  eyeglass */
+
+
+.link-btn.eyeglass .button-container a.button:hover {
+background-color: unset;
+font-family: var(--avenir);
+font-size: 16px;
+font-style: normal;
+color: #006395;
+font-weight: 800;
+letter-spacing: 0.32px;
+border-bottom:  1px solid #006395;
+border-radius: 0;
+text-align: center;
+margin: 12px 0;
+padding: 0.5em 0;
+    }
+
+.link-btn.eyeglass .button-container a.button:disabled {
+background-color: unset;
+font-family: var(--avenir);
+font-size: 16px;
+font-style: normal;
+line-height: normal;
+color: #295EDB;
+font-weight: 400;
+letter-spacing: 0.32px;
+opacity: 0.3;
+border-radius: 8px;
+}
+
+.link-btn.eyeglass .button-container a.button:focus {
+background-color: unset;
+font-family: var(--avenir);
+font-size: 16px;
+font-style: normal;
+line-height: normal;
+color: #295EDB;
+font-weight: 800;
+letter-spacing: 0.32px;
+border-radius: 8px;   
+display: inline-flex;
+outline: 2px solid #295EDB;
+outline-offset: 2px;
+margin: 12px 0;
+padding: 0.5em 0;
+
+}
+
+.link-btn.eyeglass .button-container a.button:active, 
+    .link-btn.eyeglass .button-container a.button.active {
+    background-color: unset;
+    font-family: var(--avenir);
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    color: #007CBA;
+    font-weight: 800;
+    letter-spacing: 0.32px;
+    border-bottom:  2px solid #007CBA;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    }
+
+/* ameracias */
+
+
+.link-btn.americas .button-container a.button:hover {
+background-color: unset;
+font-family: var(--avenir);
+font-size: 16px;
+font-style: normal;
+color: #1E4B8F;
+font-weight: 800;
+letter-spacing: 0.32px;
+border-bottom:  1px solid #1E4B8F;
+border-radius: 0;
+text-align: center;
+margin: 12px 0;
+padding: 0.5em 0;
+ }
+
+.link-btn.americas .button-container a.button:disabled {
+background-color: unset;
+font-family: var(--avenir);
+font-size: 16px;
+font-style: normal;
+line-height: normal;
+color: #295EDB;
+font-weight: 800;
+letter-spacing: 0.32px;
+opacity: 0.3;
+border-radius: 8px;
+}
+
+.link-btn.americas .button-container a.button:focus {
+background-color: unset;
+font-family: var(--avenir);
+font-size: 16px;
+font-style: normal;
+line-height: normal;
+color: #295EDB;
+font-weight: 800;
+letter-spacing: 0.32px;  
+display: inline-flex;
+padding: 4px;
+outline: 2px solid #295EDB;
+outline-offset: 2px;
+border-radius: 8px;
+
+}
+
+
+.link-btn.americas .button-container a.button:active, 
+.link-btn.americas .button-container a.button.active {
+    background-color: unset;
+    font-family: var(--avenir);
+    font-size: 16px;
+    font-style: normal;
+    color: #295EDB;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    border-bottom:  2px solid #295EDB;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    }
+
+    /* vista */
+
+
+    .link-btn.vistaopt .button-container a.button:hover {
+    background-color: unset;
+    font-family: var(--avenir);
+    font-size: 16px;
+    font-style: normal;
+    color: #17254D;
+    font-weight: 800;
+    letter-spacing: 0.32px;
+    border-bottom:  1px solid #17254D;
+    border-radius: 0;
+    text-align: center;
+    margin: 12px 0;
+    padding: 0.5em 0;
+        }
+
+    .link-btn.vistaopt .button-container a.button:disabled {
+    background-color: unset;
+    font-family: var(--avenir);
+    font-size: 16px;
+    font-style: normal;
+    color: #295EDB;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    opacity: 0.3;
+    border-radius: 8px;
+    text-align: center;
+    }
+
+    .link-btn.vistaopt .button-container a.button:focus {
+    background-color: unset;
+    font-family: var(--avenir);
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    color: #295EDB;
+    font-weight: 400;
+    letter-spacing: 0.32px;  
+    display: inline-flex;
+    outline: 2px solid #295EDB;
+    outline-offset: 2px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 12px 0;
+    padding: 0.5em 0;
+    }
+
+    .link-btn.vistaopt .button-container a.button:active, 
+    .link-btn.vistaopt .button-container a.button.active {
+        background-color: unset;
+        font-family: var(--avenir);
+        font-size: 16px;
+        font-style: normal;
+        color: #21356E;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 0.32px;
+        border-bottom:  2px solid #21356E;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        }
+
+        
