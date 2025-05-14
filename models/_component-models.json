@@ -15,6 +15,9 @@
     "...": "./_section.json#/models"
   },
   {
+    "...": "./_commerce-cart.json#/models"
+  },
+  {
     "...": "../blocks/*/_*.json#/models"
   },
   {
