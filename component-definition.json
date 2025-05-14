@@ -313,6 +313,18 @@
               }
             }
           }
+        },
+        {
+          "title": "Text2 - Cart",
+          "id": "text",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/text/v1/text",
+                "template": {}
+              }
+            }
+          }
         }, {
           "title": "Mini Cart",
           "id": "commerce-mini-cart",
