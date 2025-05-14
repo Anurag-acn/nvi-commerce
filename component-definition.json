@@ -87,13 +87,14 @@
               }
             }
           }
-        },{
+        },
+        {
           "title": "Section",
           "id": "section",
           "plugins": {
             "xwalk": {
               "page": {
-                "resourceType": "blocks/columns",
+                "resourceType": "core/franklin/components/sections/v1/sections",
                 "template": {
                   "model": "section",
                   "filter": "section"
