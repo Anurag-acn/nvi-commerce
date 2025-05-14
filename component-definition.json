@@ -303,7 +303,7 @@
       "id": "cart",
       "components": [
         {
-          "title": "Text",
+          "title": "Text - Cart",
           "id": "text",
           "plugins": {
             "xwalk": {
