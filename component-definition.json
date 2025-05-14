@@ -316,7 +316,7 @@
         },
         {
           "title": "Mini Cart",
-          "id": "text",
+          "id": "commerce-mini-cart",
           "plugins": {
             "xwalk": {
               "page": {
