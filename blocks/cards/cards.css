@@ -1,0 +1,204 @@
+.cards > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  grid-gap: 24px;
+}
+
+.cards-img-metadata, .cards-img-no-alt, .cards-id, .cards-card-body, .cards-btn-target{
+  display: none;
+}
+
+.cards > ul > li {
+  border: 1px solid #E4E4E4;
+  background-color: var(--background-color);
+  border-radius: 4px;
+}
+
+.cards .cards-card-image {
+  line-height: 0;
+  margin: 24px;
+}
+
+.cards > ul > li img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.card ul .last-card {
+  padding: 10px;
+}
+
+/* America’s Best */
+
+.cards > ul > li .cards-card-pretitle p {
+  color: var(--color-dark-warm);
+  font-family: var(--body-font-family);
+  font-weight: 800;
+  font-size: var(--body-font-size-xxs);
+  font-style: normal;
+  line-height: 140%;
+  letter-spacing: 0;
+  margin: 0 24px 8px;
+}
+
+.cards > ul > li .cards-card-title p {
+  color: var(--color-black);
+  font-family: var(--body-font-family);
+  font-weight: 800;
+  font-size: var(--body-font-size-xxxl);
+  font-style: normal;
+  line-height: 58px;
+  margin: 0 24px 16px;
+}
+
+.cards > ul > li .cards-card-subtitle p {
+  color: var(--color-dark-warm);
+  font-family: var(--body-font-family);
+  font-weight: 500;
+  font-size: var(--body-font-size-xl);
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0;
+  margin: 0 24px 16px;
+}
+
+.cards > ul > li .cards-card-body-text p {
+  color: var(--color-darkest-warm);
+  font-family: var(--body-font-family);
+  font-weight: 400;
+  font-size: var(--body-font-size-xs);
+  font-style: normal;
+  line-height: 140%;
+  margin: 0 24px 16px;
+}
+
+.cards > ul > li .cards-card-buttoncontainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 24px;
+  gap: 16px;
+}
+
+.cards ul li .cards-card-buttoncontainer p {
+  margin: 0;
+}
+
+/* Eyeglass World */
+
+.brand-eye .cards > ul > li .cards-card-pretitle p {
+  font-family: var(--body-font-family);
+  font-weight: 400;
+}
+
+.brand-eye .cards > ul > li .cards-card-title p {
+  font-family: var(--body-font-family);
+  font-weight: 400;
+}
+
+.brand-eye .cards > ul > li .cards-card-subtitle p {
+  font-family: var(--body-font-family);
+  font-weight: 400;
+}
+
+.brand-eye .cards > ul > li .cards-card-body-text p {
+  font-family: var(--body-font-family);
+}
+
+/* Vista Optical */
+
+.brand-vi .cards > ul > li .cards-card-pretitle p {
+  font-family: var(--body-font-family);
+  font-weight: 400;
+}
+
+.brand-vi .cards > ul > li .cards-card-title p {
+  font-family: var(--body-font-family);
+  font-weight: 400;
+}
+
+.brand-vi .cards > ul > li .cards-card-subtitle p {
+  font-family: var(--body-font-family);
+  font-weight: 500;
+}
+
+.brand-vi .cards > ul > li .cards-card-body-text p {
+  font-family: var(--body-font-family);
+}
+
+@media (width <= 900px) {
+  .cards .cards-card-image {
+    margin: 16px;
+  }
+
+  .cards > ul > li .cards-card-pretitle p {
+    margin: 0 16px 4px;
+  }
+  
+  .cards > ul > li .cards-card-title p {
+    font-size: var(--body-font-size-xxl);
+    line-height: 40px;
+    margin: 0 16px 4px;
+  }
+  
+  .cards > ul > li .cards-card-subtitle p {
+    font-weight: 500;
+    font-size: var(--body-font-size-m-1);
+    margin: 0 16px 12px;
+    line-height: 22px;
+  }
+  
+  .cards > ul > li .cards-card-body-text p {
+    margin: 0 16px 12px;
+  }
+  
+  .cards > ul > li .cards-card-buttoncontainer {
+    display: block;
+    margin: 0 24px;
+  }
+
+/* Eyeglass World */
+
+.brand-eye .cards > ul > li .cards-card-pretitle p {
+  font-family: var(--body-font-family);
+  font-weight: 400;
+}
+
+.brand-eye .cards > ul > li .cards-card-title p {
+  font-family: var(--body-font-family);
+  font-weight: 400;
+}
+
+.brand-eye .cards > ul > li .cards-card-subtitle p {
+  font-family: var(--body-font-family);
+  font-weight: 400;
+}
+
+.brand-eye .cards > ul > li .cards-card-body-text p {
+  font-family: var(--body-font-family);
+}
+
+/* Vista Optical */
+
+.brand-vi .cards > ul > li .cards-card-pretitle p {
+  font-family: var(--body-font-family);
+  font-weight: 400;
+}
+
+.brand-vi .cards > ul > li .cards-card-title p {
+  font-family: var(--body-font-family);
+  font-weight: 400;
+}
+
+.brand-vi .cards > ul > li .cards-card-subtitle p {
+  font-family: var(--body-font-family);
+  font-weight: 500;
+}
+
+.brand-vi .cards > ul > li .cards-card-body-text p {
+  font-family: var(--body-font-family);
+}
+}
