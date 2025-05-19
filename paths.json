@@ -1,1 +1,13 @@
-
+{
+        "mappings": [
+    "/content/nvi-commerce/:/",
+    "/content/nvi-commerce/configuration:/.helix/config.json",
+    "/content/nvi-commerce/headers:/.helix/headers.json",
+    "/content/nvi-commerce/metadata:/metadata.json",
+    "/content/nvi-commerce/placeholders:/placeholders.json",
+    "/content/nvi-commerce.resource/enrichment/enrichment.json:/enrichment/enrichment.json"
+        ],
+        "includes": [
+            "/content/nvi-commerce/"
+        ]
+    }
