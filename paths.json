@@ -1,13 +1,1 @@
-{
-  "mappings": [
-    "/content/americasbest/:/",
-    "/content/americasbest/configuration:/.helix/config.json",
-    "/content/americasbest/headers:/.helix/headers.json",
-    "/content/americasbest/metadata:/metadata.json",
-    "/content/americasbest/placeholders:/placeholders.json",
-    "/content/americasbest.resource/enrichment/enrichment.json:/enrichment/enrichment.json"
-  ],
-  "includes": [
-    "/content/americasbest/"
-  ]
-}
+
