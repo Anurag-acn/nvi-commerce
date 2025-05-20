@@ -21,6 +21,7 @@
   --text-color: #131313;
   --link-color: #295edb;
   --link-hover-color: #1e4b8f;
+  --gray-bg: #E4E4E4;
 
   /* Americas color */
 
@@ -268,7 +269,9 @@
     /* body sizes */
     --body-font-size-xxxxl: 80px;
     --body-font-size-xxxl:48px;
+    --body-font-size-xxl-1: 36px;
     --body-font-size-xxl: 32px;
+    --body-font-size-xl-1: 28px;
     --body-font-size-xl: 20px;
     --body-font-size-l: 22px;
     --body-font-size-m-1: 18px;

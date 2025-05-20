@@ -272,3 +272,15 @@ header nav .nav-tools .default-content-wrapper {
   cursor: pointer;
 
 }
+
+/* Hiding header for mobile for temporary */
+@media (width <=900px) {
+  header .nav-wrapper .header-wrapper{
+    display: none !important;
+  }
+
+  header .nav-wrapper .navigation-wrapper{
+    display: none !important;
+  }
+
+}

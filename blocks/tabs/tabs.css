@@ -21,6 +21,7 @@
   transition: background-color 0.2s;
   background: none;
   min-width: 100px;
+  font-family: AvenirLTPro-Medium, arial, sans-serif;
 }
 
 .tabs .tabs-list button:focus {
@@ -36,9 +37,8 @@
 .tabs .tabs-list button p {
   margin: 0;
   font-size: 16px;
-  font-weight: 800;
-  line-height: normal;
-  letter-spacing: 0.32px;
+  font-weight: 400;
+  line-height: 22px;
   text-align: center;
 }
 
@@ -46,6 +46,13 @@
 .tabs .tabs-list button[aria-selected='true'] {
   border-bottom: 2px solid var(--link-color);
   cursor: initial;
+  font-family: AvenirLTPro-Heavy, arial, sans-serif;
+  font-weight: 900;
+}
+
+.tabs .tabs-list button[aria-selected='true'] p {
+  line-height: 22.4px;
+  font-weight: 900;
 }
 
 .tabs .tabs-panel {

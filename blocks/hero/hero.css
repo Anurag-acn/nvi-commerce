@@ -39,7 +39,7 @@ img {
 
 .hero-wrapper .hero-pretitle {
   font-family: var(--body-font-family);
-  font-weight: 800;
+  font-weight: var(--font-weight-xtra-bold);
   font-size: var(--body-font-size-xxs);
   font-style: normal;
   text-align: center;
@@ -51,34 +51,35 @@ img {
 
 .hero-wrapper .hero-title {
   font-family: var(--body-font-family);
-  font-weight: 800;
+  font-weight: var(--font-weight-xtra-bold);
   font-size: var(--body-font-size-xxxl);
   font-style: normal;
   text-align: center;
   line-height: 58px;
+  letter-spacing: var(--letter-spacing-xxxs);
   color: var(--color-black);
-  margin-bottom: 4px;
+  margin-bottom: 16px;
 }
 
 .hero-wrapper .hero-subtitle {
   font-family: var(--body-font-family);
-  font-weight: 500;
+  font-weight: var(--font-weight-xtra-bold);
   font-size: var(--body-font-size-xl);
   font-style: normal;
   text-align: center;
-  line-height: 24px;
+  line-height: 22px;
   color: var(--color-dark-warm);
   margin-bottom: 16px;
 }
 
 .hero-wrapper .hero-body-text {
   font-family: var(--body-font-family);
-  font-weight: 400;
+  font-weight: var(--font-weight-regular);
   font-size: var(--body-font-size-s);
   font-style: normal;
   text-align: center;
   color: var(--color-darkest-warm);
-  line-height: 140%;
+  line-height: 22px;
   margin-bottom: 16px;
 }
 
@@ -387,8 +388,10 @@ img {
   }
 
   .hero-wrapper .hero-title {
-    font-size: var(--body-font-size-xxl);
-    line-height: 40px;
+    font-size: var(--body-font-size-xxl-1);
+    line-height: var(--line-height-s);
+    letter-spacing: -0.36px;
+    margin-bottom: 12px;
   }
 
   .hero-wrapper .hero-pretitle {
