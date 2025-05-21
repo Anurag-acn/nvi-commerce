@@ -6,7 +6,9 @@
   "hero",
   "cards",
   "columns",
-  "fragment"
+  "fragment",
+  "accordion",
+  "accordion-item"
 ]
 
     
