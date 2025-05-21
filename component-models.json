@@ -1476,7 +1476,7 @@
         "name": "template",
         "label": "Template",
         "valueType": "string",
-        "value": "plp",
+        "value": "plp test",
         "readOnly": true
       }
     ]
