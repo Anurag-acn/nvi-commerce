@@ -2,7 +2,9 @@
   {
     "id": "main",
     "components": [
-      "section"
+      "section", 
+      "header-section", 
+      "navigation-section"
     ]
   },
   {
@@ -17,11 +19,19 @@
       "text",
       "image",
       "button",
+      "button-nvi",
       "title",
       "hero",
       "cards",
       "columns",
       "fragment",
+      "teaser",
+      "tabs",
+      "accordion",
+      "navigation",
+      "logo",
+      "contact-form",
+      "multi-columns",
       "product-teaser",
       "product-recommendations"
     ]
@@ -371,10 +381,41 @@
     ]
   },
   {
+    "id": "header-section",
+    "components": ["section"]
+  },
+  {
+    "id": "navigation-section",
+    "components": [
+      "section",
+      "navigation",
+      "text",
+      "image",
+      "fragment",
+      "teaser",
+      "tabs",
+      "accordion",
+      "logo",
+      "cards"
+    ]
+  },
+  {
     "id": "cards",
     "components": [
       "card"
     ]
+  },
+  {
+    "id": "navigation",
+    "components": [
+      "navigation-image-list",
+      "navigation-link-list",
+      "cards"
+    ]
+  },
+  {
+    "id": "logo",
+    "components": ["logo"]
   },
   {
     "id": "columns",
@@ -388,7 +429,26 @@
       "text",
       "image",
       "button",
-      "title"
+      "button-nvi",
+      "cards", 
+      "title", 
+      "teaser"
     ]
+  },
+  {
+    "id": "tabs",
+    "components": ["tab"]
+  },
+  {
+    "id": "accordion",
+    "components": ["accordion-item"]
+  },
+  {
+    "id": "accordion-item",
+    "components": ["text", "image", "button", "cards", "title", "teaser"]
+  },
+  {
+    "id": "multi-columns",
+    "components": ["multi-column"]
   }
 ]

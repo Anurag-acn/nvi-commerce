@@ -1,0 +1,120 @@
+.accordion details {
+    border-top: 1px solid #B0B0B0;
+    border-bottom: 1px solid #B0B0B0;
+    margin-top: -1px;
+  }
+  /* stylelint-disable-next-line no-descending-specificity */
+  .accordion details + details {
+    margin-top: -1px;
+  }
+  
+  .accordion details summary {
+    font-size: 1.438rem;
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+    overflow: auto;
+    font-weight: 500;
+    line-height: 2.25rem;
+    display: flex;
+
+    /* min-height: 5rem; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+  }
+
+  .accordion details summary>div {
+    padding-right: 0.5rem;
+    width: 100%;
+  }
+  
+  .accordion details summary div p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  .accordion details summary:hover {
+    color : var(--link-color);
+  }
+
+  .accordion details summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  .accordion details summary::after {
+    content: "+";
+    width: 12px;
+    height: 12px;
+    margin: 0.5rem;
+    margin-bottom: 17px;
+  }
+  
+  .accordion details[open] summary::after {
+    content: "-";
+    font-size: 36px;
+  }
+
+  .accordion details .accordion-item-body {
+    padding: 0 0 1.375rem;
+  }
+
+  .accordion details .accordion-item-body p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: var(--gray-shade-1);
+  }
+
+  .accordion-item-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    width : auto;
+  }
+
+  /* mobile */
+@media (width >= 360px) and (width < 768px) {
+  .accordion details summary {
+    font-size: 1.188rem;
+    line-height: 1.75rem;
+  }
+
+  .accordion details .accordion-item-body p {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+}
+
+/* tablet */
+@media (width >= 768px){
+  .accordion details summary {
+    line-height: 1.875rem;
+  }
+  
+  .accordion details summary div p {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+
+  .accordion details .accordion-item-body p {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+}
+
+@media (width >= 1024px){
+  .accordion details summary div p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .accordion details summary {
+    padding: 16px 24px
+  }
+  .accordion details .accordion-item-body {
+    padding: 0 1.5rem 1.375rem;
+  }
+}
+
