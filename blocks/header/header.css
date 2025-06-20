@@ -721,3 +721,6 @@ li
     display: none;
   }
 }
+.section.product-recommendations-container{
+  display: none;
+}
