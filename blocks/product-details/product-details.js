@@ -36,10 +36,8 @@ export default async function decorate(block) {
 
   // Layout
   const fragment = document.createRange().createContextualFragment(`
-    
     <div class="container">
     <div class="column-1">
-      
       <img src="/images/sp1.png" alt="Main Image" class="main-image" />
  <div class="fittingbox-trigger col-8 col-md-12" js-fittingbox-trigger="">
             <button type="button" class="btn btn-outline-secndary fittingbox-trigger__trigger-btn" data-toggle="modal" data-target="#fittingboxModal" nvi-selenium="fittingbox-modal-trigger">
@@ -61,9 +59,6 @@ export default async function decorate(block) {
     <div class="dot white"></div>
     <div class="dot white"></div>
   </div>
-
-
-  
 <div class="pdp-accordion">
   <div class="pdp-accordion-header" >
     <span>Measurements</span>
@@ -76,7 +71,6 @@ export default async function decorate(block) {
         <img src="/images/LensWidth.png" alt="LensWidth" style="width: 104px; height: 45px;">
         <div class="pdp-lens-number frame_eye_size">50mm</div>
       </div>
-
       <div class="pdp-measurment-img-text-lens">
         <div class="pdp-lens-width">Bridge Width</div>
         <img src="/images/BridgeWidth.png" style="width: 104px; height: 45px;">
@@ -164,7 +158,6 @@ export default async function decorate(block) {
   </div>
 </div>
 
-
 <div class="pdp-accordion overview">
   <div class="pdp-accordion-header" >
     <span>Overview</span>
@@ -178,9 +171,7 @@ The Visionary is a great unisex rectangular shape with side rivet details. </p>
 
   </div>
 </div>
-
-
-    </div>
+</div>
     <div class="column-2 pdp-right-section">
      <div class="featured-facet">
                         <div class="staff-picks badge-display " >
@@ -212,7 +203,6 @@ The Visionary is a great unisex rectangular shape with side rivet details. </p>
     </div>
   </div>
  
-   
   `);
 
   const $alert = fragment.querySelector('.product-details__alert');
@@ -232,240 +222,234 @@ The Visionary is a great unisex rectangular shape with side rivet details. </p>
 
   // Alert
   let inlineAlert = null;
- const productData = {
+  const productData = {
     "data": {
-        "products": {
-            "aggregations": [
-                {
-                    "attribute_code": "color",
-                    "count": 2,
-                    "label": "Color",
-                    "options": [
-                        {
-                            "value": "#ebebeb"
-                        },
-                        {
-                            "value": "Black"
-                        }
-                    ]
-                },
-                {
-                    "attribute_code": "manufacturer",
-                    "count": 1,
-                    "label": "Manufacturer",
-                    "options": [
-                        {
-                            "value": "Prive Goods"
-                        }
-                    ]
-                },
-                {
-                    "attribute_code": "nvi_product_type",
-                    "count": 1,
-                    "label": "NVI Product Type",
-                    "options": [
-                        {
-                            "value": "FR"
-                        }
-                    ]
-                },
-                {
-                    "attribute_code": "frame_shape",
-                    "count": 1,
-                    "label": "Frame Shape",
-                    "options": [
-                        {
-                            "value": "SQU"
-                        }
-                    ]
-                },
-                {
-                    "attribute_code": "frame_ege_typ",
-                    "count": 1,
-                    "label": "Frame Ege Type",
-                    "options": [
-                        {
-                            "value": "HBVL"
-                        }
-                    ]
-                },
-                {
-                    "attribute_code": "gender",
-                    "count": 1,
-                    "label": "Gender",
-                    "options": [
-                        {
-                            "value": "Men's"
-                        }
-                    ]
-                },
-                {
-                    "attribute_code": "frame_type",
-                    "count": 1,
-                    "label": "Frame Type",
-                    "options": [
-                        {
-                            "value": "Full Rim"
-                        }
-                    ]
-                },
-                {
-                    "attribute_code": "aux_status_code",
-                    "count": 1,
-                    "label": "Aux Status Code",
-                    "options": [
-                        {
-                            "value": "A"
-                        }
-                    ]
-                },
-                {
-                    "attribute_code": "status_code",
-                    "count": 1,
-                    "label": "Status Code",
-                    "options": [
-                        {
-                            "value": "N"
-                        }
-                    ]
-                },
-                {
-                    "attribute_code": "frame_temple_size",
-                    "count": 1,
-                    "label": "Frame Temple Size",
-                    "options": [
-                        {
-                            "value": "140"
-                        }
-                    ]
-                },
-                {
-                    "attribute_code": "frame_bridge",
-                    "count": 1,
-                    "label": "Frame Bridge",
-                    "options": [
-                        {
-                            "value": "17"
-                        }
-                    ]
-                },
-                {
-                    "attribute_code": "frame_eye_size",
-                    "count": 1,
-                    "label": "Frame Eye Size",
-                    "options": [
-                        {
-                            "value": "55"
-                        }
-                    ]
-                },
-                {
-                    "attribute_code": "measurement_b",
-                    "count": 1,
-                    "label": "Measurement B",
-                    "options": [
-                        {
-                            "value": "45"
-                        }
-                    ]
-                },
-                {
-                    "attribute_code": "material_desc",
-                    "count": 1,
-                    "label": "Material Desc",
-                    "options": [
-                        {
-                            "value": "Plastic"
-                        }
-                    ]
-                },
-                {
-                    "attribute_code": "master_sku_number",
-                    "count": 1,
-                    "label": "Master SKU Number",
-                    "options": [
-                        {
-                            "value": "255828"
-                        }
-                    ]
+      "products": {
+        "aggregations": [
+          {
+            "attribute_code": "color",
+            "count": 2,
+            "label": "Color",
+            "options": [
+              {
+                "value": "#ebebeb"
+              },
+              {
+                "value": "Black"
+              }
+            ]
+          },
+          {
+            "attribute_code": "manufacturer",
+            "count": 1,
+            "label": "Manufacturer",
+            "options": [
+              {
+                "value": "Prive Goods"
+              }
+            ]
+          },
+          {
+            "attribute_code": "nvi_product_type",
+            "count": 1,
+            "label": "NVI Product Type",
+            "options": [
+              {
+                "value": "FR"
+              }
+            ]
+          },
+          {
+            "attribute_code": "frame_shape",
+            "count": 1,
+            "label": "Frame Shape",
+            "options": [
+              {
+                "value": "SQU"
+              }
+            ]
+          },
+          {
+            "attribute_code": "frame_ege_typ",
+            "count": 1,
+            "label": "Frame Ege Type",
+            "options": [
+              {
+                "value": "HBVL"
+              }
+            ]
+          },
+          {
+            "attribute_code": "gender",
+            "count": 1,
+            "label": "Gender",
+            "options": [
+              {
+                "value": "Men's"
+              }
+            ]
+          },
+          {
+            "attribute_code": "frame_type",
+            "count": 1,
+            "label": "Frame Type",
+            "options": [
+              {
+                "value": "Full Rim"
+              }
+            ]
+          },
+          {
+            "attribute_code": "aux_status_code",
+            "count": 1,
+            "label": "Aux Status Code",
+            "options": [
+              {
+                "value": "A"
+              }
+            ]
+          },
+          {
+            "attribute_code": "status_code",
+            "count": 1,
+            "label": "Status Code",
+            "options": [
+              {
+                "value": "N"
+              }
+            ]
+          },
+          {
+            "attribute_code": "frame_temple_size",
+            "count": 1,
+            "label": "Frame Temple Size",
+            "options": [
+              {
+                "value": "140"
+              }
+            ]
+          },
+          {
+            "attribute_code": "frame_bridge",
+            "count": 1,
+            "label": "Frame Bridge",
+            "options": [
+              {
+                "value": "17"
+              }
+            ]
+          },
+          {
+            "attribute_code": "frame_eye_size",
+            "count": 1,
+            "label": "Frame Eye Size",
+            "options": [
+              {
+                "value": "55"
+              }
+            ]
+          },
+          {
+            "attribute_code": "measurement_b",
+            "count": 1,
+            "label": "Measurement B",
+            "options": [
+              {
+                "value": "45"
+              }
+            ]
+          },
+          {
+            "attribute_code": "material_desc",
+            "count": 1,
+            "label": "Material Desc",
+            "options": [
+              {
+                "value": "Plastic"
+              }
+            ]
+          },
+          {
+            "attribute_code": "master_sku_number",
+            "count": 1,
+            "label": "Master SKU Number",
+            "options": [
+              {
+                "value": "255828"
+              }
+            ]
+          }
+        ],
+        "items": [
+          {
+            "id": 145107,
+            "sku": "255828",
+            "name": "Prive Revaux Visionary",
+            "options": null,
+            "price_range": {
+              "minimum_price": {
+                "regular_price": {
+                  "value": 89.95,
+                  "currency": "USD"
                 }
-            ],
-            "items": [
-                {
-                    "id": 145107,
-                    "sku": "255828",
-                    "name": "Prive Revaux Visionary",
-                    "options": null,
-                    "price_range": {
-                        "minimum_price": {
-                            "regular_price": {
-                                "value": 89.95,
-                                "currency": "USD"
-                            }
-                        }
-                    },
-                    "categories": [],
-                    "style_number": "MLK",
-                    "style_group_number": "VISIONARY",
-                    "per_box_count": null,
-                    "brand": null,
-                    "dominance": null,
-                    "multifocal_add": null,
-                    "lens_type": null,
-                    "product_tag": null,
-                    "manufacturer": "2970",
-                    "websites": [
-                        {
-                            "id": 3,
-                            "name": "America's Best"
-                        }
-                    ]
-                }
-            ],
-            "total_count": 1
-        }
+              }
+            },
+            "categories": [],
+            "style_number": "MLK",
+            "style_group_number": "VISIONARY",
+            "per_box_count": null,
+            "brand": null,
+            "dominance": null,
+            "multifocal_add": null,
+            "lens_type": null,
+            "product_tag": null,
+            "manufacturer": "2970",
+            "websites": [
+              {
+                "id": 3,
+                "name": "America's Best"
+              }
+            ]
+          }
+        ],
+        "total_count": 1
+      }
     }
-};
-const itemsproduct = productData.data.products.items[0];
-const skuids = itemsproduct.sku;
-const pdpname = itemsproduct.name;
-const pdpprice = itemsproduct.price_range.minimum_price.regular_price.value;
-const aggregations = productData.data.products.aggregations;
-const frameShapeAgg = aggregations.find(attr => attr.attribute_code === "frame_shape");
-const frame_temple_size = aggregations.find(attr => attr.attribute_code === "frame_temple_size");
-const frame_temple_size_value=frame_temple_size.options[0].value;
-const frame_bridge = aggregations.find(attr => attr.attribute_code === "frame_bridge");
-const frame_bridge_value=frame_bridge.options[0].value;
-const frame_eye_size = aggregations.find(attr => attr.attribute_code === "frame_eye_size");
-const frame_eye_size_value=frame_eye_size.options[0].value;
-const fmaterial_desc = aggregations.find(attr => attr.attribute_code === "material_desc");
-const material_desc_value=fmaterial_desc.options[0].value;
-const frame_type = aggregations.find(attr => attr.attribute_code === "frame_type");
-const frame_type_value=frame_type.options[0].value;
+  };
+  const itemsproduct = productData.data.products.items[0];
+  const skuids = itemsproduct.sku;
+  const pdpname = itemsproduct.name;
+  const pdpprice = itemsproduct.price_range.minimum_price.regular_price.value;
+  const aggregations = productData.data.products.aggregations;
+  const frameShapeAgg = aggregations.find(attr => attr.attribute_code === "frame_shape");
+  const frame_temple_size = aggregations.find(attr => attr.attribute_code === "frame_temple_size");
+  const frame_temple_size_value = frame_temple_size.options[0].value;
+  const frame_bridge = aggregations.find(attr => attr.attribute_code === "frame_bridge");
+  const frame_bridge_value = frame_bridge.options[0].value;
+  const frame_eye_size = aggregations.find(attr => attr.attribute_code === "frame_eye_size");
+  const frame_eye_size_value = frame_eye_size.options[0].value;
+  const fmaterial_desc = aggregations.find(attr => attr.attribute_code === "material_desc");
+  const material_desc_value = fmaterial_desc.options[0].value;
+  const frame_type = aggregations.find(attr => attr.attribute_code === "frame_type");
+  const frame_type_value = frame_type.options[0].value;
+  const brandtype = itemsproduct.brand;
+  document.querySelector(".pdp-price-final").innerText = pdpprice;
+  document.querySelector(".pdp-title").innerText = pdpname;
+  document.querySelector(".m-product-specs__item-value--sku").innerText = skuids;
+  document.querySelector(".frame_temple_size").innerText = frame_temple_size_value + "mm";
+  document.querySelector(".frame_bridge_size").innerText = frame_bridge_value + "mm";
+  document.querySelector(".frame_eye_size").innerText = frame_eye_size_value + "mm";
+  document.querySelector(".material_desc").innerText = material_desc_value;
+  document.querySelector(".frame_type").innerText = frame_type_value;
 
-
-const brandtype=itemsproduct.brand;
-
-
-document.querySelector(".pdp-price-final").innerText=pdpprice;
-document.querySelector(".pdp-title").innerText=pdpname;
-document.querySelector(".m-product-specs__item-value--sku").innerText=skuids;
-document.querySelector(".frame_temple_size").innerText=frame_temple_size_value+"mm";
-document.querySelector(".frame_bridge_size").innerText=frame_bridge_value+"mm";
-document.querySelector(".frame_eye_size").innerText=frame_eye_size_value+"mm";
-document.querySelector(".material_desc").innerText=material_desc_value;
-document.querySelector(".frame_type").innerText=frame_type_value;
-
-
-
-if (frameShapeAgg && frameShapeAgg.options.length > 0) {
+  if (frameShapeAgg && frameShapeAgg.options.length > 0) {
     const frameShapeValue = frameShapeAgg.options[0].value;
-document.querySelector(".frame_Shape").innerText=frameShapeValue;
-}
+    document.querySelector(".frame_Shape").innerText = frameShapeValue;
+  }
 
-const colorOptions = productData.data.products.aggregations.find(attr => attr.attribute_code === "color").options;
+  const colorOptions = productData.data.products.aggregations.find(attr => attr.attribute_code === "color").options;
   const container = document.getElementById('pdp-color-options');
-   container.innerHTML = '';
+  container.innerHTML = '';
 
   colorOptions.forEach((opt, index) => {
     const colorVal = opt.value;
@@ -489,7 +473,7 @@ const colorOptions = productData.data.products.aggregations.find(attr => attr.at
     container.appendChild(wrapper);
   });
 
-function toggleAccordion(header) {
+  function toggleAccordion(header) {
     const body = header.nextElementSibling;
     const icon = header.querySelector('.accordion-icon');
     const isOpen = body.style.display === 'none';
@@ -498,13 +482,12 @@ function toggleAccordion(header) {
     icon.textContent = isOpen ? '–' : '+';
   }
   document.querySelectorAll('.pdp-accordion-header').forEach(icon => {
-  icon.addEventListener('click', function (event) {
-    const header = this.closest('.pdp-accordion-header');
-    toggleAccordion(header);
-    event.stopPropagation(); 
+    icon.addEventListener('click', function (event) {
+      const header = this.closest('.pdp-accordion-header');
+      toggleAccordion(header);
+      event.stopPropagation();
+    });
   });
-});
-
 
   // Render Containers
   const [
